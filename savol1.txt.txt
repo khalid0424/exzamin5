@@ -1,0 +1,261 @@
+Р
+> No interner, no help to each other!
+> Send the exam to github
+> You have 2 hours only
+
+### 1 Question
+Дар бораи рекурсия нависед. 
+
+ҶАВОБИ 1.Рекурсия яке аз кисмои авалаи забонхои барноманависи буда дар хама забонхо вохурда метавоне инчуунин дар 
+пайтон низ як кисми авалин сохта шудааст нисбат ба луп ва дар вазифахам ба луп монанд мебошад аммо фаркияти ассосиаш инаст ки ин наметавонад ба мисли 
+луп бе интихо чарх задан наметавонад ва доираи чарх занонданаш махдудаст .Як аз сабабхои камистифода будани ин фуксия
+ дар байни барномасозон ин сустар кор карданаш мебошад.
+
+
+## RULES:
+
+### 2 Question
+Closure(Замыкания) - ро бо мисолҳо фаҳмонед.
+ҶАВОБИ 2.
+
+Бо воситаи Клоузер мометавонем  ба тагирйобандахои функсиямон  дастраси кардан имконият медихад  
+мисол мо метавДар Python, 
+ 
+  def  user_name(name):
+      def   chopkun():
+         print(f"salom khushomsdy {name}")
+    chopkun()
+
+
+user_name("ESHMATBEG")
+
+Дар ин чо мо метавонем бо ном гирифтан аз хар
+ функсияи сохтамон фарйд йо  колл мекунем ва метавонаем ба рохати истифода барем
+
+
+### 3 Question
+Контейнерҳоро ба хотир оварда онҳоро нависед. 
+Дар пайтон мо метавонем барои н
+игохдори малумотхо контенерхо истифода барем ки онхо метавонанд малумотхои моро ба нави худ ба тартиб дароранд.
+мисол .LIST яъне руйхатхо 
+my_list = [ 1, 2, 3, 4, 5, ]
+ва SET маҷмуаҳо
+my_set = {1, 2, 3, 4, 5, 6, }
+ ва dictionary яъне лугатхо в
+my_dict = {"kholif': "khofiz" : "khodim" : } 
+ ва tuplt ҳастанд
+my_tuple = (1, 2, 3, 4,)
+
+
+### 4 Question
+Дар бораи lambda expression ва list comprehension нависед.
+
+Ламода ар пайтон асосан манои функсияхои аноними яне бе номро эникос мекунад 
+ ва лист  компратсия як рохи осон ва кутоб барои сохтани руйхатт
+
+
+### 5 Question
+Кадом методҳои модули datetime ва randome - ро медонед. Бо мисолҳо фаҳмонед.
+Датетайм барои ворид кардани замон дар код ва йо барнома зарури буда замонхоро дар барнома чег 
+мезанад хатто замони холро 
+
+рандом юарои интихоб кардани рандом вариантхоеки мо ба код медихемро бо шакли рандом ва нохост мебарорад.
+
+
+### 1 Task
+Write a Python program to insert an element at a specified position into a given list.
+Напишите программу Python для вставки элемента в указанную позицию в заданный список.
+[1, 1, 2, 3, 4, 4, 5, 1]
+# input
+    Enter an element: Sorbon
+    Index: 3
+# output
+    [1, 1, 2, "Sorbon", 3, 4, 4, 5, 1]
+
+ҶАВОБИ
+my_list = [1, 1, 2, 3, 4, 4, 5,]
+element = "Sorbon"
+index = 3
+
+
+my_list.insert(index, element)
+
+print(my_list)  
+
+### 2 Task
+Write a Python program to convert a list of multiple integers into a single integer.
+Напишите программу на Python для преобразования списка из нескольких целых чисел в одно целое число.
+# input
+    Sample list: [11, 33, 50]
+# output
+    Expected Output: 113350
+ҶАВОБИ
+
+my_list  = [ 11, 33, 50]
+  
+result = int(''.join(map(str, my_list)))
+
+
+print(result)
+
+### 3 Task
+Create a python program to read line number N from the following file.
+Создайте программу Python для чтения строки номер N из следующего файла.
+my_file.txt -> Hello world
+               TEST
+               Tajikistan
+               An apple
+# input
+    3
+# otput
+    Tajikistan
+ҶАВОБИ
+
+file_name = "my_file.txt"
+line_number = 3
+
+line_number -= 1
+
+
+for open(file_name, 'r') as file:
+    lines = file.readlines
+print(lines[line_number]) 
+
+### 4 Task
+Create a python program to generate a random password of the specified length.
+Создайте программу Python для создания случайного пароля указанной длины.
+# input
+    Enter the desired password length: 12
+# output
+    Generated password: Xy#7pLm$9oR5
+ҶАВОБИ
+import random
+import string
+
+
+length = 12
+
+
+all_symbols = string.ascii_letters + string.digits + string.punctuation
+
+password = ''.join(random.choice(all_symbols) for _ in range(length))
+
+print("kod shumo:", password)
+
+### 5 Task
+Build a program that converts currency from one denomination to another.
+Создайте программу, которая конвертирует валюту одного номинала в другой.
+# input
+    Enter the amount in TJS: 1
+# output
+    Rub -> 0.1193
+    USD -> 10.8656
+    EUR -> 11.7837
+    UZ_SUM -> 0.0856
+    натавонистам.
+
+
+### 6 Task
+Given a natural number N, find the sum of the numbers 1+1/1!+1/2!+1/3!+...+1/N!. The number of actions should be proportional to N.
+По данному натуральному числу N найдите сумму чисел 1+1/1!+1/2!+1/3!+...+1/N!. Количество действий должно быть пропорционально N.
+# input
+    1
+# output
+    2
+
+ҶАВОБИ
+n = 1
+sum = 1
+or i in range(1, N + 1):
+    sum += 1 / math.factorial(i)
+
+print(sum)
+
+### 7 Task
+Write a Python program for binary search of an ordered list.
+Напишите программу на Python для двоичного поиска в упорядоченном списке.
+# Example
+    Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 3) -> True
+    Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 17) -> False
+
+ҶАВОБИ
+ml_ist = [0, 1, 3, 8, 14, 18, 19, 34, 52]
+item = 3
+
+a, b = 0, len(ml_ist) - 1
+while a <= b:
+    i = (a + right) // 2
+    if molist[i] == item:
+        print("Item found!")
+        break
+    elif molist[i] < item:
+        a = i + 1
+    else:
+        b = i - 1
+else:
+    print("not")
+
+
+
+
+
+### 8 Task
+Write a Python program to replace each character of a word of length five and more with a hash character (#).
+Напишите программу на Python, заменяющую каждый символ слова длиной пять и более символом решетки (#).
+# input
+    Count the lowercase letters in the said list of words:
+# output
+    ##### the ######### ####### in the said list of ######
+
+text = input()
+words = text.split()
+res = []
+for word in words:
+    if len(word) >= 5:
+        res.append("#" * len(word))
+    else:
+        res.append(word)
+num = " ".join(result)
+print(num)
+
+
+### 9 Task
+Write a Python script to print a dictionary where the keys are numbers between 1 and N (both included) and the values are the square of the keys.
+Напишите сценарий Python для печати словаря, в котором ключами являются числа от 1 до N (оба включены), а значениями являются квадраты ключей.
+# input
+    15
+# output
+    {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}
+ҶАВОБИ
+n = 15
+
+my_dict = {i: i**2 for i in range(1, N + 1)}
+
+print(my_dict)
+
+
+
+
+
+
+### 10 Task
+Given a list of elements of any data types. Create a Python program to separate elements by their types and save them into a new dictionary.
+The keys of a dictionary must be of a data type, and its element must be data belonging to that type.
+Дан список элементов любых типов данных. Создайте программу Python для разделения элементов по их типам и сохранения их в новый словарь.
+Ключи словаря должны иметь тип данных, а его элементом должны быть данные, принадлежащие этому типу.
+# input
+    1 hello True 12 Muhammad
+# output
+    {"int": [1,12], "str": ["hello", "Muhammad"], "bool": [True]}
+
+
+
+word = [1, "hello", True, 12, "Muhammad"]
+natija = {}
+for word in word:
+    i = type(word)
+    if i not in natija:
+        natija[i] = []
+    natija[i].append(word)
+
+print(i)
